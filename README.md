@@ -12,7 +12,7 @@ step size. The weight function can be
     https://github.com/madaraszadam/PI_weight_functions              
     https://doi.org/10.26434/chemrxiv-2024-x36vm-v2                  
  c) downloaded from this site:                                       
-    https://zenodo.org/records/10702413                              
+    https://zenodo.org/doi/10.5281/zenodo.10702412                              
 The resulting kernel function is written in the file of              
 "kernel.dat"                                                         
 The algorithm is based on Fourier transformation, more details can be         
