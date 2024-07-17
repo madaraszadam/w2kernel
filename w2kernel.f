@@ -90,6 +90,7 @@ c  921    format (i20.0)
      &              ' in femtoseconds:  ',$)
 c   90 format (f20.0)
       read (*,*) datf
+      write (*,*) datf
 
       gnum=240000
 
@@ -103,7 +104,7 @@ c   90 format (f20.0)
 
       outgmax=avogadro*planck/boltzmann/temp*1E11/timestep/2.0d0
 
-      write (*,*) "datn, timestep",datn,timestep
+c      write (*,*) "datn, timestep",datn,timestep
 
       outgnum=gnum
 
@@ -275,7 +276,7 @@ c determine the kernel function on less dense grid
 
 c end determine the kernel function on less dense grid
 
-      write(*,*) "qfilter terminated normally."
+      write(*,*) "w2kernel terminated normally."
 
       end program w2kernel
 
