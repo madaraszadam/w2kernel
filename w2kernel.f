@@ -17,7 +17,7 @@ c      The resulting kernel function is written in the file of
 c      "kernel.dat"
 c      The algorithm is based on Fourier transformation that can be
 c      found in the following paper:
-c      DÈnes Berta, D·vid Ferenc, Imre BakÛ and ¡d·m Madar·sz 
+c      D√©nes Berta, D√°vid Ferenc, Imre Bak√≥ and √Åd√°m Madar√°sz 
 c      "Nuclear Quantum Effects from the Analysis of Smoothed Trajectories: 
 c      Pilot Study for Water"
 c      https://doi.org/10.1021/acs.jctc.9b00703
@@ -126,15 +126,13 @@ c Read the
 
         OPEN (51, file = gx_file_name)
 
-         i = 0
-         DO
+         DO i=0,gnum-1
            READ (51,*, END=13) gx(i,0),gy(i)
 
            gx(i,0)=gx(i,0)*2.0d0
 
            gyold(i)=gy(i)
 
-           i = i + 1
          END DO
    13 CLOSE (51)
 
